@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="./assets/img/logo-shortCut.png" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Raleway:ital,wght@0,100;0,200;0,300;0,700;1,100;1,200&display=swap"
+    rel="stylesheet"> -->
+  <link rel="stylesheet" href="assets/font ws/css/all.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>shopwise</title>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="top-header mt-2">
+      <div class="container">
+        <div class=" nav_block container d-flex justify-content-between  align-items-center">
+          <a class="navbar-brand">
+            <img src="assets/img/logo_dark.png"></a>
+          <form class="d-flex" role="search">
+            <div class="input-group d-none d-lg-flex">
+              <select class="select-product">
+                <option value="">All Category</option>
+                <option value="Dresses">Dresses</option>
+                <option value="Shirt-Tops">Shirt &amp; Tops</option>
+                <option value="T-Shirt">T-Shirt</option>
+                <option value="Pents">Pents</option>
+                <option value="Jeans">Jeans</option>
+              </select>
+              <input class="form-control" type="search" placeholder="Search product">
+              <button class="search-button" type="submit">Search</button>
+            </div>
+          </form>
+          <ul class="navbar-nav d-flex flex-row ">
+            <li class=" p-3">
+              <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-user"></i></a>
+            </li>
+            <li class=" p-3">
+              <a class="nav-link" href="#"><i class="fa-solid fa-heart"></i>
+                <span class="count">1</span><span></span></a>
+            </li>
+            <li class=" p-3">
+              <a class="nav-link" href="#"><i class="fa-solid fa-bag-shopping"></i>
+                <span class="count">3 </span> <span class="budget">$1950</span></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="bottom-header border-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg na  p-3">
+          <div class="container-fluid">
+            <button class="navbar-Categorie" type="button" data-bs-toggle="collapse" data-bs-target="#navCatContent"
+              aria-expanded="false" class="categories_btn categories_menu collapsed">
+
+              <span class="fs-6">ALL CATEGORIES</span>
+              <a><i class="fa-solid fa-bars"></i></a>
+            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+
+              <ul class="navbar-nav ms-auto ">
+                <li class="nav-item dropdown">
+                  <a class="nav-link mx-2 dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    HOME
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                    <li><a class="dropdown-item" href="#">Contact us</a></li>
+                  </ul>
+                <li class="nav-item dropdown">
+                  <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    PAGE
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                    <li><a class="dropdown-item" href="#">Contact us</a></li>
+                  </ul>
+                <li class="nav-item dropdown">
+                  <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    PRODUCTS
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                    <li><a class="dropdown-item" href="#">Contact us</a></li>
+                  </ul>
+                <li class="nav-item dropdown">
+                  <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    BLOG
+                  </a>
+
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                    <li><a class="dropdown-item" href="#">Contact us</a></li>
+                  </ul>
+                <li class="nav-item dropdown">
+                  <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    SHOP
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                    <li><a class="dropdown-item" href="#">Contact us</a></li>
+                  </ul>
+                <li class="nav-item">
+                  <a class="nav-link mx-2 " aria-current="page" href="#">Cotanct US</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
+                <ul class="navbar-nav  ms-auto d-none d-lg-flex flex-row ">
+                  <li class=" p-2">
+                    <i class="fa-solid fa-phone-volume"></i><span> 123-456-7689</span>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+  <div class="super-hero">
+    <div id="carouselExampleDark" class="carousel  carousel-dark slide">
+
+      <div class="carousel-inner ">
+        <div class="carousel-item active" data-bs-interval="2000"
+          style="  height: 500px; background-image: url('./assets/img/banner18.jpg'); background-position:top;">
+          <div class="row">
+            <div class="col-lg-7 col-10 container">
+              <div class="center-block img-caption">
+                <h2 class="fs-1 fw-bold lh-base">
+                  Beat Headphone</h2>
+                <h5 class=" fs-4 fw-bold lh-lg  font-weight-light">Viewing Experience to Next Level</h5>
+                <a class="btn sh-btn search-button text-uppercase" href="">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item " data-bs-interval="10000"
+          style=" height: 500px; background-image: url('./assets/img/banner17.jpg') ; background-position:top;">
+          <div class="row ">
+            <div class="col-lg-7 col-10 container">
+              <div class="center-block img-caption">
+                <h2 class="fs-1 fw-bold lh-base"> Smart Phones</h2>
+                <h5 class=" fs-4 fw-bold lh-lg font-weight-light"><span class="text_default priceOffer">50% </span> off
+                  in all products</h5>
+                <a class="btn sh-btn search-button text-uppercase" href="">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item"
+          style=" height: 500px; background-image: url('./assets/img/banner16.jpg'); background-position:top;">
+          <div class="row">
+            <div class="col-lg-7 col-10 container">
+              <div class="center-block img-caption">
+                <h2 class="fs-1 fw-bold lh-base">LED 75 INCH F58</h2>
+                <h5 class=" fs-4 fw-bold lh-lg font-weight-light">Get up to <span
+                    class="text_default priceOffer">50%</span>
+                  off Today Only!</h5>
+                <a class="btn sh-btn search-button text-uppercase" href="">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- //////////////////////////////////////////// -->
+  <section class=" container mt-5 ">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="sampleProduct">
+          <img src="./assets/img/shop_banner_img7.jpg">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="sampleProduct">
+          <img src="./assets/img/shop_banner_img8.jpg">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="sampleProduct">
+          <img src="./assets/img/shop_banner_img9.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="top-Categories mt-5 ">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class=" col-lg-8 md-6">
+          <h2 class="text-center mb-3  fw-bold"> Top Categories</h2>
+          <p class="text-center lh-lg pb-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque earum quos
+            in
+            quo
+            minus assumenda dignissimos maxime necessitatibus laborum, porro exercitationem!
+          </p>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col Category">
+          <img src="./assets/img/cat_img1.png">
+          <h6 class="text-center pt-2">Television</h6>
+
+        </div>
+        <div class="col Category">
+          <img src="./assets/img/cat_img2.png">
+          <h6 class="text-center  pt-2">Mobile</h6>
+        </div>
+        <div class="col Category">
+          <img src="./assets/img/cat_img3.png">
+          <h6 class="text-center  pt-2">Headphone</h6>
+
+        </div>
+        <div class="col Category">
+          <img src="./assets/img/cat_img4.png">
+          <h6 class="text-center pt-2">Watch</h6>
+        </div>
+        <div class="col Category">
+          <img src="./assets/img/cat_img5.png">
+          <h6 class="text-center  pt-2">Game</h6>
+
+        </div>
+        <div class="col Category">
+          <img src="./assets/img/cat_img6.png">
+          <h6 class="text-center pt-2">Camera</h6>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- //////////////////////////////////////////////////////// -->
+  <section class="exclusive-products m-5 p-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 md-6">
+          <h2 class="text-center mb-3  fw-bold"> Exclusive Products
+          </h2>
+        </div>
+        <div class="col-12">
+          <ul class="nav justify-content-center mb-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">New Arrival</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Best Sellers</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Featured</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Spacial Offer</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row column-gap-4 justify-content-center">
+        <div class="card  g-col-lg-3 md-6" style="width:250px">
+          <div class="figure">
+            <img class="card-img-top">
+
+            <img class="Sirv image-main" src="./assets/img/el_img1.jpg">
+            <img class="Sirv image-hover" data-src="./assets/img/el_hover_img1.jpg">
+            <ul class="list-none pr-action-btn">
+              <li class="add-to-cart"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              <li><a href="" class="popup-ajax"><i class="fa-solid fa-shuffle"></i></a></li>
+              <li><a href="" class="popup-ajax"><i class="fa-solid fa-magnifying-glass-plus"></i><a></li>
+              <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+            </ul>
+          </div>
+          <div class="cards">
+            <h6 class="title-product">Red & Black Headphone</h6>
+            <div class="prices">
+              <span class="priceOffer">$45.00</span>
+              <del>$55.25</del>
+              <span class="OfferPercent">35% Off</span>
+            </div>
+          </div>
+          <div class="rating"><i class="fa-solid fa-star" style="font-size: 0.75rem;"></i><i class="fa-solid fa-star"
+              style="font-size: 0.75rem;"></i><i class="fa-solid fa-star" style="font-size:0.75rem;"></i><i
+              class="fa-solid fa-star" style="font-size: 0.75rem;"></i><i class="fa-regular fa-star"
+              style="font-size: 0.75rem;"></i>
+            <span class="n-rate">(21)</span>
+          </div>
+        </div>
+        <div class="card g-col-lg-3 md-6" style="width:250px">
+          <div class="figure">
+            <img class="card-img-top">
+
+            <img class="Sirv image-main" src="./assets/img/el_img2.jpg">
+            <img class="Sirv image-hover" data-src="./assets/img/el_hover_img2.jpg">
+            <ul class="list-none pr-action-btn">
+              <li class="add-to-cart"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              <li><a href="" class="popup-ajax"><i class="fa-solid fa-shuffle"></i></a></li>
+              <li><a href="" class="popup-ajax"><i class="fa-solid fa-magnifying-glass-plus"></i><a></li>
+              <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+            </ul>
+          </div>
+          <div class="cards">
+            <h6 class="title-product">Smart Watch External</h6>
+            <div class="prices">
+              <span class="priceOffer">$55.00</span>
+              <del>$95.00</del>
+              <span class="OfferPercent">25% Off</span>
+            </div>
+          </div>
+          <div class="rating"><i class="fa-solid fa-star" style="font-size: 0.75rem;"></i><i class="fa-solid fa-star"
+              style="font-size: 0.75rem;"></i><i class="fa-solid fa-star" style="font-size:0.75rem;"></i><i
+              class="fa-solid fa-star" style="font-size: 0.75rem;"></i><i class="fa-regular fa-star"
+              style="font-size: 0.75rem;"></i>
+            <span class="n-rate">(15)</span>
+          </div>
+        </div>
+        <div class="card g-col-lg-3 md-6" style="width:250px">
+          <span class="new">new</span>
+          <img src="./assets/img/el_img3.jpg" class="card-img-top" style="padding-top:24px">
+          <div class="cards">
+            <h6 class="title-product">Nikon HD camera</h6>
+            <div class="prices">
+              <span class="priceOffer">$68.00</span>
+              <del>$99.00</del>
+              <!-- <span class="OfferPercent">35% Off</span> -->
+            </div>
+          </div>
+          <div class="rating"><i class="fa-solid fa-star" style="font-size: 0.75rem;"></i><i class="fa-solid fa-star"
+              style="font-size: 0.75rem;"></i><i class="fa-solid fa-star" style="font-size:0.75rem;"></i><i
+              class="fa-solid fa-star" style="font-size: 0.75rem;"></i><i class="fa-regular fa-star"
+              style="font-size: 0.75rem;"></i>
+            <span class="n-rate">(25)</span>
+          </div>
+        </div>
+        <div class="card g-col-lg-3 md-6" style="width:250px">
+          <div class="figure">
+            <img class="card-img-top">
+            <img class="Sirv image-main" src="./assets/img/el_img4.jpg">
+            <img class="Sirv image-hover" data-src="./assets/img/el_hover_img4.jpg">
+            <ul class="list-none pr-action-btn">
+              <li class="add-to-cart"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              <li><a href="" class="popup-ajax"><i class="fa-solid fa-shuffle"></i></a></li>
+              <li><a href="" class="popup-ajax"><i class="fa-solid fa-magnifying-glass-plus"></i><a></li>
+              <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+            </ul>
+          </div>
+          <div class="cards">
+            <h6 class="title-product">Audio Equipment</h6>
+            <div class="prices">
+              <span class="priceOffer">$69.00</span>
+              <del>$89.00</del>
+              <span class="OfferPercent">20% Off</span>
+            </div>
+          </div>
+          <div class="rating"><i class="fa-solid fa-star" style="font-size: 0.75rem;"></i><i class="fa-solid fa-star"
+              style="font-size: 0.75rem;"></i><i class="fa-solid fa-star" style="font-size:0.75rem;"></i><i
+              class="fa-solid fa-star" style="font-size: 0.75rem;"></i><i class="fa-regular fa-star"
+              style="font-size: 0.75rem;"></i>
+            <span class="n-rate">(21)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- ///////////////////////////////////////////////////////////// -->
+  <section class="mt-5 pt-2  banner">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <img src="./assets/img/shop_banner_img11.png" style="width:1100px">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ////////////////////////////////////////////////////////////////////////////// -->
+  <section class="m-5 p-3">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class=" col-lg-8 md-6">
+          <h2 class="text-center m-3  fw-bold"> Trending Products
+          </h2>
+        </div>
+      </div>
+      <div class="row column-gap-4 justify-content-center">
+        <div class="card  g-col-lg-3 md-6" style="width:250px">
+          <div class="figure">
+            <img class="card-img-top">
+
+            <img class="Sirv image-main" src="./assets/img/el_img9.jpg">
+            <img class="Sirv image-hover" data-src="./assets/img/el_img9E.jpg">
+            <ul class="list-none pr-action-btn">
+              <li class="add-to-cart"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              <li><a href="" class="popup-ajax"><i class="fa-solid fa-shuffle"></i></a></li>
+              <li><a href="" class="popup-ajax"><i class="fa-solid fa-magnifying-glass-plus"></i><a></li>
+              <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+            </ul>
+          </div>
+          <div class="cards">
+            <h6 class="title-product">oppo Reno3 Pro</h6>
+            <div class="prices">
+              <span class="priceOffer">$45.00</span>
+              <del>$55.25</del>
+              <span class="OfferPercent">35% Off</span>
+            </div>
+          </div>
+          <div class="rating"><i class="fa-solid fa-star" style="font-size: 0.75rem;"></i><i class="fa-solid fa-star"
+              style="font-size: 0.75rem;"></i><i class="fa-solid fa-star" style="font-size:0.75rem;"></i><i
+              class="fa-solid fa-star" style="font-size: 0.75rem;"></i><i class="fa-regular fa-star"
+              style="font-size: 0.75rem;"></i>
+            <span class="n-rate">(21)</span>
+          </div>
+        </div>
+        <div class="card g-col-lg-3 md-6" style="width:250px">
+          <div class="figure">
+            <img class="card-img-top">
+            <img class="Sirv image-main" src="./assets/img/el_img12.jpg">
+            <img class="Sirv image-hover" data-src="./assets/img/el_hover_img12.jpg">
+            <ul class="list-none pr-action-btn">
+              <li class="add-to-cart"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              <li><a href="" class="popup-ajax"><i class="fa-solid fa-shuffle"></i></a></li>
+              <li><a href="" class="popup-ajax"><i class="fa-solid fa-magnifying-glass-plus"></i><a></li>
+              <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+            </ul>
+          </div>
+          <div class="cards">
+            <h6 class="title-product">Sound Equipment for Low</h6>
+            <div class="prices">
+              <span class="priceOffer">$55.00</span>
+              <del>$95.00</del>
+              <span class="OfferPercent">25% Off</span>
+            </div>
+          </div>
+          <div class="rating"><i class="fa-solid fa-star" style="font-size: 0.75rem;"></i><i class="fa-solid fa-star"
+              style="font-size: 0.75rem;"></i><i class="fa-solid fa-star" style="font-size:0.75rem;"></i><i
+              class="fa-solid fa-star" style="font-size: 0.75rem;"></i><i class="fa-regular fa-star"
+              style="font-size: 0.75rem;"></i>
+            <span class="n-rate">(15)</span>
+          </div>
+        </div>
+        <div class="card g-col-lg-3 md-6" style="width:250px">
+          <div class="figure">
+            <img class="card-img-top">
+
+            <img class="Sirv image-main" src="./assets/img/el_img7.jpg">
+            <img class="Sirv image-hover" data-src="./assets/img/el_hover_img7.jpg">
+            <ul class="list-none pr-action-btn">
+              <li class="add-to-cart"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              <li><a href="" class="popup-ajax"><i class="fa-solid fa-shuffle"></i></a></li>
+              <li><a href="" class="popup-ajax"><i class="fa-solid fa-magnifying-glass-plus"></i><a></li>
+              <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+            </ul>
+          </div>
+          <div class="cards">
+            <h6 class="title-product">Audio Theaters</h6>
+            <div class="prices">
+              <span class="priceOffer">$68.00</span>
+              <del>$99.00</del>
+              <!-- <span class="OfferPercent">35% Off</span> -->
+            </div>
+          </div>
+          <div class="rating"><i class="fa-solid fa-star" style="font-size: 0.75rem;"></i><i class="fa-solid fa-star"
+              style="font-size: 0.75rem;"></i><i class="fa-solid fa-star" style="font-size:0.75rem;"></i><i
+              class="fa-solid fa-star" style="font-size: 0.75rem;"></i><i class="fa-regular fa-star"
+              style="font-size: 0.75rem;"></i>
+            <span class="n-rate">(25)</span>
+          </div>
+        </div>
+        <div class="card g-col-lg-3 md-6" style="width:250px">
+          <div class="figure">
+            <img class="card-img-top">
+
+            <img class="Sirv image-main" src="./assets/img/el_hover_img5.jpg">
+            <img class="Sirv image-hover" data-src="./assets/img/el_img5.jpg">
+            <ul class="list-none pr-action-btn">
+              <li class="add-to-cart"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              <li><a href="" class="popup-ajax"><i class="fa-solid fa-shuffle"></i></a></li>
+              <li><a href="" class="popup-ajax"><i class="fa-solid fa-magnifying-glass-plus"></i><a></li>
+              <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+            </ul>
+          </div>
+          <div class="cards">
+            <h6 class="title-product">Audio Equipment</h6>
+            <div class="prices">
+              <span class="priceOffer">$69.00</span>
+              <del>$89.00</del>
+              <span class="OfferPercent">20% Off</span>
+            </div>
+          </div>
+          <div class="rating"><i class="fa-solid fa-star" style="font-size: 0.75rem;"></i><i class="fa-solid fa-star"
+              style="font-size: 0.75rem;"></i><i class="fa-solid fa-star" style="font-size:0.75rem;"></i><i
+              class="fa-solid fa-star" style="font-size: 0.75rem;"></i><i class="fa-regular fa-star"
+              style="font-size: 0.75rem;"></i>
+            <span class="n-rate">(21)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ///////////////////////////////////////////////////////////////// -->
+
+  <section class="Client-review">
+    <div id="carouselExampleControlsNoTouching" class="carousel slide carousel-dark  text-center" data-bs-touch="false">
+
+      <div class="carousel-inner">
+        <h2 class=" text-center">Our Client Say!</h2>
+        <div class="carousel-item active">
+          <p class="text-muted">
+            <i class="fas fa-quote-left pe-2 pt-3"></i>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+            nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+            ibthal.
+          </p>
+          <div class="row d-flex justify-content-center mt-5">
+            <div class="col-lg-8 ">
+              <img class="shadow-1-strong text-center my-4" src="./assets/img/user_img3.jpg" alt="avatar"
+                style="width: 80px;" />
+              <h5 class="mb-3">Daisy Lana</h5>
+              <p>Designer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <p class="text-muted">
+            <i class="fas fa-quote-left pe-2 pt-3"></i>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+            nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+            ibthal.
+          </p>
+          <div class="row d-flex justify-content-center mt-5">
+            <div class="col-lg-8 ">
+              <img class="shadow-1-strong text-center my-4" src="./assets/img/user_img2.jpg" alt="avatar"
+                style="width: 80px;" />
+              <h5 class="mb-3">Maria Kate</h5>
+              <p>Photographer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <p class="text-muted">
+            <i class="fas fa-quote-left pe-2 pt-3"></i>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et deleniti
+            nesciunt sint eligendi reprehenderit reiciendis, quibusdam illo, beatae quia
+            ibthal.
+          </p>
+          <div class="row d-flex justify-content-center mt-5">
+            <div class="col-lg-8 ">
+              <img class="shadow-1-strong text-center my-4" src="./assets/img/user_img4.jpg" alt="avatar"
+                style="width: 80px;" />
+              <h5 class="mb-3">John Becker</h5>
+              <p>Designer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="prev" style="color: black;">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" style="color: black;"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="mt-5 pb-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class=" col-lg-8 md-6">
+          <h2 class="text-center mb-3  fw-bold"> Latest News</h2>
+          <p class="  text-center lh-lg pb-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod
+            tempor incididunt ut labore. </p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 ">
+          <div class="post">
+            <img src="./assets/img/el_blog_img2.jpg" alt="el_blog_img2" class="postImg">
+            <div class="blog_content bg-white">
+              <div class="posttxt">
+                <h5 class="mb-3 news">Why is a ticket to Lagos so expensive?</h5>
+                <ul>
+                  <li><a href="#"><i class="fa-regular fa-calendar-days pe-3"></i> April 14, 2018</a></li>
+                  <li><a href="#"><i class="fa-solid fa-comment pe-2"></i> 2 Comment</a></li>
+                </ul>
+                <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything hidden in
+                  the text</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 ">
+          <div class="post">
+            <img src="./assets/img/el_blog_img1.jpg" alt="el_blog_img2" class="postImg">
+            <div class="blog_content bg-white">
+              <div class="posttxt">
+                <h5 class="mb-3 news">Why is a ticket to Lagos so expensive?</h5>
+                <ul>
+                  <li><a href="#"><i class="fa-regular fa-calendar-days pe-3"></i> April 14, 2018</a></li>
+                  <li><a href="#"><i class="fa-solid fa-comment pe-2"></i> 2 Comment</a></li>
+                </ul>
+                <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything hidden in
+                  the text</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 ">
+          <div class="post">
+            <img src="./assets/img/el_blog_img3.jpg" alt="el_blog_img2" class="postImg">
+            <div class="blog_content bg-white">
+              <div class="posttxt">
+                <h5 class="mb-3 news">Why is a ticket to Lagos so expensive?</h5>
+                <ul>
+                  <li><a href="#"><i class="fa-regular fa-calendar-days pe-3"></i> April 14, 2018</a></li>
+                  <li><a href="#"><i class="fa-solid fa-comment pe-2"></i> 2 Comment</a></li>
+                </ul>
+                <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                  anything hidden in
+                  the text</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class=" mt-5 py-5" style="background-color: #ff324d;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class=" newsletter-text text-white" style="
+          padding-left: 80px;">
+            <h3>Join Our Newsletter Now</h3>
+            <p class="text-white"> Register now to get updates on promotions. </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="email-form">
+            <form class="position-relative">
+              <input type="text" required="" class="form-control rounded-0" placeholder="Enter Email Address">
+              <button type="submit" class="btn btn-dark rounded-0 py-2 px-5" name="submit"
+                value="Submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer position-relative overflow-hidden text-white ">
+    <div class="footer_top py-5">
+      <div class="container">
+        <div class="row d-flex flex-wrap">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="column">
+              <img src=" ./assets/img/logo_dark (1).png" class="mb-4">
+              <p class="mb-3" style="color: #6c757d; font-size: 16px;">If you are going to use of Lorem Ipsum need to be
+                sure there isn't
+                anything hidden of text
+              </p>
+              <ul class="details-adress p-0">
+                <li style="list-style: none; margin-bottom: 15;">
+                  <p style="color: #6c757d;"> <i class="fa-solid fa-location-dot" style="color: #687188;"></i>
+                    123 Street, Old Trafford, NewYork, USA</p>
+                </li>
+                <li style="list-style: none;">
+                  <p style="color: #6c757d;"> <i class="fa-regular fa-envelope" style="color: #687188;"></i>
+                    info@sitename.com </p>
+                </li>
+                <li style="list-style: none;">
+                  <p style="color: #6c757d;"><i class=" fa-solid fa-phone" style="color: #6c757d;"></i> + 457 789 789
+                    65
+                  </p>
+                </li>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-sm-6">
+            <div class="column">
+              <h6 class="column-title text-capitalize">Useful Links</h6>
+              <ul>
+                <li> <a href="#">About Us</a> </li>
+                <li> <a href="#">FAQ</a> </li>
+                <li> <a href="#">Location</a> </li>
+                <li> <a href="#">Affiliates</a> </li>
+                <li> <a href="#">Contact</a> </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-sm-6">
+            <div class="column">
+              <h6 class="column-title text-capitalize">My Account</h6>
+              <ul>
+                <li> <a href="#">My Account</a> </li>
+                <li> <a href="#">Discount</a> </li>
+                <li> <a href="#">Returns</a> </li>
+                <li> <a href="#">Orders History</a> </li>
+                <li> <a href="#">Order Tracking</a> </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="column">
+              <h6 class="column-title">Download App </h6>
+              <img src="./assets/img/f1.png" class="mb-4">
+              <img src=" ./assets/img/f2.png" class="mb-4">
+              <div>
+                <li>
+                  <h6 class="column-title">Social </h6>
+                  <span class="fs-2 "><i class="fa-brands fa-facebook" style="color: #0452d7;"></i></span>
+                  <span class="fs-2 "><i class="fa-brands fa-twitter" style="color: #2766d3;"></i></span>
+                  <span class="fs-2 "><i class="fa-brands fa-google-plus" style="color: #c11f1f;"></i></span>
+                  <span class="fs-2 "><i class="fa-brands fa-youtube" style="color: #e41111;"></i></span>
+                  <span class="camera "><i class="fa-solid fa-camera-retro" style="color: #165ad0;"></i></span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+
+  <script src="./assets/javaScript.js"></script>
+
+</body>
+
+</html>
